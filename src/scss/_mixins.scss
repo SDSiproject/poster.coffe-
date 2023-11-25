@@ -1,0 +1,17 @@
+@use "./varibals" as varibals; 
+
+@mixin title() { 
+    color: varibals.$textColor;
+    font-family: varibals.$fontMontserrat;
+    font-weight: 500;
+    font-size: varibals-$sectionTitleSize;
+
+}
+
+@mixin text () { 
+    color: varibales.$textColor;
+    text-align: justify;
+    font-family: variables.$fontMontserrat;
+    font-size: variables-$sectionTitleSize; 
+}
+
