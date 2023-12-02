@@ -1,6 +1,6 @@
 @use "./fonts" as fonts; 
 @use "./nullstyle" as nullstyle;
-@use "./varibals" as varibals; 
+@use "./variables" as variables; 
 @use "./mixins" as mixins; 
 
 
@@ -22,7 +22,7 @@ justify-content: center;
     height: fit-content;
     width: 1000px;
     padding: 25px 105px;
-    background-color: varibals.$bgcolor;
+    background-color: variables.$bgcolor;
 
 }
 
@@ -39,11 +39,65 @@ justify-content: center;
 }
 .concept-and-background {
 
-    &__titile {
-        @include mixins.title (); 
+    &__title {
+        @include mixins.title(); 
     }
 
     &__text {
         @include mixins.text(); 
     }
 }
+
+.typography-og-color-palette {
+
+    &__title {
+        @include mixins.title();
+        margin-bottom: 21px;  
+    }
+    &__fonts { 
+        display: flex; 
+        justify-content: center; 
+        gap: 49px;  
+    }
+
+
+    &__font { 
+
+        &_oleo {
+            color: variables.$textColor;
+            font-size: variables.$bigFontsSize;
+            font-family: variables.$fontOleo;
+        }
+        
+        
+        &_inconsolata{ 
+            color: variables.$textColor;
+            font-size: variables.$bigFontsSize;
+            font-family: variables.$fontIncosolata;
+        
+        }
+    }
+
+    &__text {
+        @include mixins.text();
+        margin-bottom: 33px;
+    }
+
+    &_colors {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    
+}
+ 
+.color { 
+
+    &_circle { 
+        width: 79.6px;
+        height: 79.6px;
+        border-radius: 50%;
+    }
+
+} 
