@@ -41,10 +41,12 @@ justify-content: center;
 
     &__title {
         @include mixins.title(); 
-    }
+        margin-bottom: 15px;
+    } 
 
     &__text {
         @include mixins.text(); 
+        margin-bottom: 33px; 
     }
 }
 
@@ -67,13 +69,14 @@ justify-content: center;
             color: variables.$textColor;
             font-size: variables.$bigFontsSize;
             font-family: variables.$fontOleo;
+            margin-bottom: 25.36px;
         }
         
         
         &_inconsolata{ 
             color: variables.$textColor;
             font-size: variables.$bigFontsSize;
-            font-family: variables.$fontIncosolata;
+            font-family: variables.$fontInconsolata;
         
         }
     }
@@ -83,7 +86,7 @@ justify-content: center;
         margin-bottom: 33px;
     }
 
-    &_colors {
+    &__colors {
         display: flex;
         justify-content: space-around;
     }
@@ -92,12 +95,73 @@ justify-content: center;
     
 }
  
-.color { 
-
-    &_circle { 
+.color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__circle { 
         width: 79.6px;
         height: 79.6px;
         border-radius: 50%;
+        margin-bottom: 8px;
+        
+        &_crayola { 
+            border:  1px solid black;
+        }
+        
+        &_bistre {
+            background-color: #3C251A;  
+        }
+    
+        &_feldgrau {
+            background-color: #4C684A;
+        }
+
+        &_gray-x-11 {
+            background-color: #BABABA;
+        }    
+            
+        &_beaver {
+            background-color: #A38167;
+        }
+    }
+    
+    &__hex { 
+
+        margin-bottom: 10px;
+        font-family: variables.$fontInconsolata;
+         
+        color: #222;
+        font-family: Inconsolata;
+        font-size: variables.$smallFontsSize;
+        font-weight: 500;
+
+    
+    }  
+    &__name { 
+    
+        font-family: variables.$fontInconsolata;
+        margin-bottom: 33px;
+        font-size: variables.$mediumFontsSize;
+
+
+
+    }
+ 
+}
+
+.figures-and-forms { 
+
+    &__title {
+        @include mixins.title(); 
+        margin-bottom: 15px;
+    } 
+
+    &__text {
+        @include mixins.text(); 
+        margin-bottom: 33px; 
     }
 
-} 
+}
+ 

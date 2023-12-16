@@ -62,12 +62,14 @@ body {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 15px;
 }
 .concept-and-background__text {
   color: #222222;
   text-align: justify;
   font-family: "Montserrat";
   font-size: 16px;
+  margin-bottom: 33px;
 }
 
 .typography-og-color-palette__title {
@@ -90,11 +92,12 @@ body {
   color: #222222;
   font-size: 28px;
   font-family: "Oleo Script Swash Caps";
+  margin-bottom: 25.36px;
 }
 .typography-og-color-palette__font_inconsolata {
   color: #222222;
   font-size: 28px;
-  font-family: "Incosolata";
+  font-family: "Inconsolata";
 }
 .typography-og-color-palette__text {
   color: #222222;
@@ -103,7 +106,7 @@ body {
   font-size: 16px;
   margin-bottom: 33px;
 }
-.typography-og-color-palette_colors {
+.typography-og-color-palette__colors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,8 +114,64 @@ body {
       justify-content: space-around;
 }
 
-.color_circle {
+.color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.color__circle {
   width: 79.6px;
   height: 79.6px;
   border-radius: 50%;
+  margin-bottom: 8px;
+}
+.color__circle_crayola {
+  border: 1px solid black;
+}
+.color__circle_bistre {
+  background-color: #3C251A;
+}
+.color__circle_feldgrau {
+  background-color: #4C684A;
+}
+.color__circle_gray-x-11 {
+  background-color: #BABABA;
+}
+.color__circle_beaver {
+  background-color: #A38167;
+}
+.color__hex {
+  margin-bottom: 10px;
+  font-family: "Inconsolata";
+  color: #222;
+  font-family: Inconsolata;
+  font-size: 12px;
+  font-weight: 500;
+}
+.color__name {
+  font-family: "Inconsolata";
+  margin-bottom: 33px;
+  font-size: 16px;
+}
+
+.figures-and-forms__title {
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.figures-and-forms__text {
+  color: #222222;
+  text-align: justify;
+  font-family: "Montserrat";
+  font-size: 16px;
+  margin-bottom: 33px;
 }
