@@ -175,3 +175,25 @@ body {
   font-size: 16px;
   margin-bottom: 33px;
 }
+
+.design-principles__title {
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 26px;
+}
+.design-principles__text {
+  color: #222222;
+  text-align: justify;
+  font-family: "Montserrat";
+  font-size: 16px;
+  margin-bottom: 33px;
+}
+
+.border {
+  margin-bottom: 1px;
+  width: 860px;
+  height: 12px;
+  background-color: #577655;
+}

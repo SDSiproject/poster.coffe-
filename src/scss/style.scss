@@ -165,3 +165,26 @@ justify-content: center;
 
 }
  
+
+.design-principles {
+
+    &__title {
+        @include mixins.title(); 
+        margin-bottom: 26px;
+    } 
+
+    &__text {
+        @include mixins.text(); 
+        margin-bottom: 33px; 
+    }
+
+}
+
+.border  {
+
+        margin-bottom: 1px;
+        width: 860px;
+        height: 12px;
+        background-color: #577655;
+   
+}
